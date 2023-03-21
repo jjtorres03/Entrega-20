@@ -1,0 +1,52 @@
+[2023-03-20T22:12:30.229] [ERROR] default - MongoServerError: E11000 duplicate key error collection: ecommerce.usuarios index: username_1 dup key: { username: "torres" }
+    at C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at handleOperationResult (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:327:20)
+    at Connection.onMessage (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:215:9)
+    at MessageStream.<anonymous> (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10) {
+  index: 0,
+  code: 11000,
+  keyPattern: { username: 1 },
+  keyValue: { username: 'torres' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-03-20T22:12:40.981] [ERROR] default - MongoServerError: E11000 duplicate key error collection: ecommerce.usuarios index: username_1 dup key: { username: "torres" }
+    at C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at handleOperationResult (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:327:20)
+    at Connection.onMessage (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:215:9)
+    at MessageStream.<anonymous> (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10) {
+  index: 0,
+  code: 11000,
+  keyPattern: { username: 1 },
+  keyValue: { username: 'torres' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-03-20T22:13:11.632] [ERROR] default - Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials l10-20020a9d6a8a000000b0069f0c7fc27asm2897127otq.69 - gsmtp
+    at SMTPConnection._formatError (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\nodemailer\lib\smtp-connection\index.js:1536:34)
+    at SMTPConnection.<anonymous> (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\nodemailer\lib\smtp-connection\index.js:540:26)
+    at SMTPConnection._processResponse (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-20\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials l10-20020a9d6a8a000000b0069f0c7fc27asm2897127otq.69 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
